@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musa Qureshi - Portfolio.</title>
+    <link rel="icon" href="./assets/Untitled_design__8_-removebg-preview.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="tailwind.config.js"></script>
+
+    <link href="input.css" rel="stylesheet">
+    <link href=".output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+</head>
+
+<body class="overflow-x-hidden outfit-regular leading-7 ">
+    <div class="fixed top-0 left-0 w-11/12 translate-y-[-80%] z-0">
+        <img src="./assets/header-bg-color.png" alt="" class="w-full ">
+    </div>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4  flex items-center justify-between z-50 ovo-regular">
+        <img src="./assets/logo.png" alt="logo" class="w-38 cursor-pointer mr-14" />
+
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white bg-white/50  shadow-sm ">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class=" flex items-center gap-4">
+
+            <button>
+                <img src="./assets/moon_icon.png" alt="moon_icon" class="w-6 md:w-8 cursor-pointer" />
+            </button>
+
+            <a href="#contact"
+                class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact
+                <img src="./assets/arrow-icon.png" alt="" class="w-3" />
+            </a>
+            <button class=" block md:hidden cursor-pointer ml-3" onclick="openMenu()">
+                <img src="./assets/menu-black.png" alt="" class="w-6" />
+            </button>
+        </div>
+
+        <!-- --------------Mobile Menu-------------- -->
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-red-50 transition duration-500 ovo-regular ">
+
+            <div class=" absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./assets/close-black.png" alt="" class="w-5 cursor-pointer" />
+            </div>
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#service" onclick="closeMenu()">Services</a></li>
+            <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- --------------Header-------------- -->
+    <div
+        class="relative z-10 w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./assets/pic2.jpg" alt="" class=" rounded-full w-38 border-1 border-amber-500 border-t-fuchsia-500 border-l-fuchsia-500 ">
+        <h3 class="flex items-center gap-3 text-xl md:text-2xl mb-3 ovo-regular">Hi! I'm Musa Qureshi <img
+                src="./assets/hand-icon.png" class="w-6" /></h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[56px]">ML Engineer & Front-end Developer</h1>
+        <p class=" max-w-2xl mx-auto ovo-regular">I am a developer from Bhopal, India and 2nd year B.tech student with 6
+            months
+            experience. <br />And currently working on Machine Learning with Python.</p>
+
+        <div class="flex flex-col md:flex-row items-center gap-4 mt-5">
+            <a href="#contact"
+                class="px-10 py-3 border border-white rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-wrap flex items-center text-white gap-2">Contact
+                Me<img src="./assets/right-arrow-white.png" alt="" class="w-4"></a>
+
+            <!-- <a href="./assets/resume.png" download
+                class="px-10 py-3 border border-gray-500 rounded-full text-wrap flex items-center bg-white gap-2">My
+                Resume<img src="./assets/download-icon.png" alt="" class="w-4"></a> -->
+            <div class="relative inline-block group">
+                <button class="px-10 py-3 border border-gray-500 rounded-full flex items-center bg-white gap-2">
+                    My Resume
+                    <img src="./assets/download-icon.png" alt="" class="w-4">
+                </button>
+
+                <div
+                    class="absolute z-10 mt-2 w-46 bg-white border border-gray-300 rounded-2xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href="./assets2/Musa Qureshi - Front-end Developer.pdf" download
+                        class="block px-4 py-2 hover:bg-gray-100 border-b">Frontend Resume</a>
+                    <a href="./assets2/Musa Qureshi - ML Engineer.pdf" download class="block px-4 py-2 hover:bg-gray-100">ML Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------About Me-------------- -->
+
+    <div id=about class=" relative z-20 w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">Introduction </h4>
+        <h2 class="text-center text-5xl">About Me</h2>
+        <div class="flex flex-col w-full lg:flex-row items-center gap-20 my-20 ">
+            <div class="max-w-max mx-auto relative">
+                <img src="./assets/user.jpg" alt="" class="  border-3 border-gray-600 w-64 sm:w-80 rounded-3xl max-w-none">
+                <div id="spin_slow"
+                    class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba (149,0,162,0.15)] flex items-center justify-center">
+                    <img src="./images/circular-text.png" alt="" class="w-full animate-spin_slow">
+                    <img src="./assets/dev2-icon.png" alt=""
+                        class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                </div>
+
+            </div>
+            <div class=" flex-1 ">
+                <p>I'm a 2nd-year B.Tech CSE student skilled in Frontend Development and exploring Machine Learning. I
+                    build responsive UIs with HTML, CSS, JS, React, and TailwindCSS, and work with Python, Pandas, and
+                    Scikit-Learn to develop ML models. Passionate about combining design and data to build real-world
+                    projects.</p>
+                <ul class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mt-5">
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6  cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./assets/code-icon.png" alt="" class="w-6 mt-3 ">
+                        <h3 class=" my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class=" my-4 font-semibold text-[14px] text-gray-500 leading-5">HTML, CSS, JS, React,
+                            Node.js.<br /> Python, Numpy, Pandas, ML.</p>
+                    </li>
+
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./assets/edu-icon.png" alt="" class="w-6 mt-3">
+                        <h3 class=" my-4 font-semibold text-gray-700">Education</h3>
+                        <p class=" my-4 font-semibold text-gray-500 leading-5 text-[14px]">Pursuing B.tech in Computer
+                            Science from Bansal Group of Institutions.</p>
+                    </li>
+
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./assets/project-icon.png" alt="" class="w-6 mt-3">
+                        <h3 class=" my-4 font-semibold text-gray-700">Experience</h3>
+                        <p class=" my-4 font-semibold text-gray-500  leading-5 text-[14px]">Built More than 5
+                            projects.<br />Machine Learning with Python training.</p>
+                    </li>
+                </ul>
+                <h4 class="my-6 text-gray-700">Tools & Technologies</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./assets/vscode.png" alt="" class="w-5 sm:w-7 ">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./assets/firebase.png" alt="" class="w-5 sm:w-7 ">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./assets/figma.png" alt="" class="w-5 sm:w-7 ">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./assets/mongodb.png" alt="" class="w-5 sm:w-7 ">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./assets/git.png" alt="" class="w-5 sm:w-7 ">
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------Services-------------- -->
+
+    <div id="service" class="relative z-20 w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">What I Do</h4>
+        <h2 class="text-center text-5xl">My Services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I build clean, responsive websites and intuitive user
+            interfaces using modern frontend tools.<br />I also work on machine learning projects that turn data
+            into
+            smart solutions. </p>
+        <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 ">
+                <img src="./assets/web-icon.png" alt="" class=" w-10">
+                <h3 class="text-lg my-4 text-gray-700">Web Development</h3>
+                <p class="text-sm text-gray-600 leading-5">  (React, Tailwind CSS)<br/>
+                    I build responsive and modern web interfaces. Clean code, fast performance, and smooth UI/UX.
+                </p>
+                <a href="" class="flex items-center gap-2 text-sm  mt-5 ">Read more <img src="./assets/right-arrow.png"
+                        class="w-4" alt=""></a>
+            </div>
+
+
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 ">
+                <img src="./assets/web-icon.png" alt="" class=" w-10">
+                <h3 class="text-lg my-4 text-gray-700">Machine Learning</h3>
+                <p class="text-sm text-gray-600 leading-5"> (Python, Scikit-learn)<br/>
+                    I create efficient ML models using Python with libraries and Scikit-learn for real-world tasks like prediction and
+                    classification.
+
+                </p>
+                <a href="" class="flex items-center gap-2 text-sm  mt-5 ">Read more <img src="./assets/right-arrow.png"
+                        class="w-4" alt=""></a>
+            </div>
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 ">
+                <img src="./assets/mobile-icon.png" alt="" class=" w-10">
+                <h3 class="text-lg my-4 text-gray-700">Backend Development</h3>
+                <p class="text-sm text-gray-600 leading-5">(REST APIs, Node.js, Python) <br/>I develop secure and scalable backend logic and REST APIs
+                    using Python or Node.js, with a focus on simplicity and efficiency.
+                </p>
+                <a href="" class="flex items-center gap-2 text-sm  mt-5 ">Read more <img src="./assets/right-arrow.png"
+                        class="w-4" alt=""></a>
+            </div>
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 ">
+                <img src="./assets/ui-icon.png" alt="" class=" w-10">
+                <h3 class="text-[16.5px] my-4 text-gray-700">AI Integration & Automation</h3>
+                <p class="text-sm text-gray-600 leading-5">Integrate AI features and automate workflows using LangChain, OpenAI,  and APIs to boost efficiency and intelligence in apps.
+                </p>
+                <a href="" class="flex items-center gap-2 text-sm  mt-5 ">Read more <img src="./assets/right-arrow.png"
+                        class="w-4" alt=""></a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- -- ----------------My Work--------------  -->
+
+    <div id="work" class="relative z-20 w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
+        <h2 class="text-center text-5xl">My Latest Work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I build clean, responsive websites and intuitive user
+            interfaces using modern frontend tools.<br />I also work on machine learning projects that turn data
+            into
+            smart solutions. </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  my-10 gap-5  ">
+            <div
+                class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            Production Stage
+                <div
+                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-8">
+                    <div>
+                        <h2>AI Career Caach</h2>
+                        <p class="text-sm text-gray-700">Personalized AI career<br/> guidance & planning </p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center
+                    shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition duration-400">
+                        <img src="./assets/send-icon.png" alt="" class="w-5">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div
+                class=" aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+                <div
+                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-8">
+                    <div>
+                        <h2>Rejouice.Clone</h2>
+                        <p class="text-sm text-gray-700">High-fidelity animated<br/> & creative web design.</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center
+                    shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition duration-400">
+                        <img src="./assets/send-icon.png" alt="" class="w-5">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div
+                class=" aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                Development Stage
+                <div
+                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-8">
+                    <div>
+                        <h2>Chatbot_ImageGen<sup>n</sup></h2>
+                        <p class="text-sm text-gray-700">AI chatbot that images<br/>generate by prompts.</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center
+                    shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition duration-400">
+                        <img src="./assets/send-icon.png" alt="" class="w-5">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div
+                class=" aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+                <div
+                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-8">
+                    <div>
+                        <h2>Python Projects</h2>
+                        <p class="text-sm text-gray-700">LMS, 2048 Game &<br/> Prediction Models</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center 
+                    shadow-[2px_2px_0_#000] group-hover:bg-lime-300  transition duration-400">
+                        <img src="./assets/send-icon.png" alt="" class="w-5">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <a href="#contact"
+                class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto sm:mx-45 lg:mx-120 my-10 hover:bg-[#fcf4ff] divide-purple-500 ">Show
+                more!
+                <img src="./images/right-arrow-bold.png" alt="" class="w-4">
+            </a>
+
+        </div>
+
+
+        <!-- ---------------Contact--------------- -->
+        <div id="contact"
+            class="w-full px-[12%] py-10 scroll-mt-20 bg-[url(./images/footer-bg-color.png)] bg-no-repeat bg-[length:90%_auto] bg-centre">
+            <h4 class="text-center mb-2 text-lg ovo-regular">Connect with me</h4>
+            <h2 class="text-center text-5xl ovo-regular">Get in touch</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 ovo-regular">I'd love to hear you! If you have any
+                questions,
+                comments or feedback,<br /> please use the form below. </p>
+            <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+                <input type="hidden" name="access_key" value="634570f9-2394-46dd-96a7-a932ccc3b276">
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <input type="text" placeholder="Enter your name"
+                        class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white " name="name"
+                        required>
+                    <input type="email" placeholder="Enter your email"
+                        class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" name="email"
+                        required>
+
+                </div>
+                <textarea rows="6" placeholder="Enter you message"
+                    class="w-full p-4 outline-none border border-gray-400 rounded-md bg-white mb-6" name="message"
+                    required></textarea>
+                <button 
+                    class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-black/75 text-white rounded-full mx-auto hover:bg-black duration-500">Submit
+                    Now!
+                    <img href="#contact" src="./images/right-arrow-white.png" alt="" class="w-4">
+                    
+                </button>
+            </form>
+            <div id="toast"
+                class="fixed bottom-5 right-5 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50">
+                Message sent successfully!
+            </div>
+        </div>
+        <!-- ---------------footer------------- -->
+
+        <div class="mt-20">
+            <div class="text-center ">
+                <img src="./assets/logo.png" alt="" class="w-46 mx-auto mb-2">
+                <div class="w-max flex items-center gap-2 mx-auto">
+                    <img src="./images/mail_icon.png"  alt="" class="w-6">
+                    <a href="mailto:musaqureshi0000@gmail.com" target="_blank" >musaqureshi0000@gmail.com</a>
+                </div>
+            </div>
+            <div class="text-center sm:flex items-center justify-between border-t
+                border-gray-400 mx-[5%] mt-12 py-6">
+                <p>©️ 2025 Musa Qureshi, 🖤 All rights reserved.</p>
+                <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                    <li><a href="https://www.linkedin.com/in/musaqureshi" target="_blank"><i class="ri-linkedin-box-fill"></i
+                >LinkedIn</a></li>
+                    <li><a href="https://github.com/Musa-0-coder/" target="_blank"><i class="ri-github-fill"></i>GitHub</a></li>
+                    <li><a href="#" target="_blank"><i class="ri-twitter-x-line"></i>Twitter</a></li>
+                    <li><a href="#" target="_blank"><i class="ri-instagram-line"></i>Inatagram</a></li>
+                    <!-- <li><a href="#"><i class="ri-instagram-line">Inatagram</a></li> -->
+
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
