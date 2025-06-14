@@ -85,7 +85,7 @@
             <!-- <a href="./assets/resume.png" download
                 class="px-10 py-3 border border-gray-500 rounded-full text-wrap flex items-center bg-white gap-2">My
                 Resume<img src="./assets/download-icon.png" alt="" class="w-4"></a> -->
-            <div class="relative inline-block group">
+<!--             <div class="relative inline-block group">
                 <button class="px-10 py-3 border border-gray-500 rounded-full flex items-center bg-white gap-2">
                     My Resume
                     <img src="./assets/download-icon.png" alt="" class="w-4">
@@ -96,7 +96,34 @@
                     <a href="./assets2/Musa Qureshi - Front-end Developer.pdf" download
                         class="block px-4 py-2 hover:bg-gray-100 border-b">Frontend Resume</a>
                     <a href="./assets2/Musa Qureshi - ML Engineer.pdf" download class="block px-4 py-2 hover:bg-gray-100">ML Resume</a>
+                </div> -->
+            <div class="relative inline-block">
+                
+                <div class="hidden lg:inline-block group">
+                    <button
+                        class="px-10 py-3 border border-gray-500 rounded-full flex items-center bg-white gap-2 hover:bg-gray-200  transition-colors duration-300">
+                        My Resume
+                        <img src="./assets/download-icon.png" alt="" class="w-4">
+                    </button>
+
+                    <div
+                        class="absolute z-10 mt-2 w-46 bg-white border border-gray-300 rounded-2xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="./assets2/Musa Qureshi - Front-end Developer.pdf" download
+                            class="block px-4 py-2 rounded-t-2xl hover:bg-gray-100 border-b">Frontend Resume</a>
+                        <a href="./assets2/Musa Qureshi - ML Engineer.pdf" download
+                            class="block px-4 py-2 rounded-b-2xl hover:bg-gray-100">ML Resume</a>
+                    </div>
                 </div>
+
+                
+                <div class="lg:hidden">
+                    <a href="./assets2/Musa Qureshi - ML Engineer.pdf" download
+                        class="px-10 py-3 border border-gray-500 rounded-full flex items-center bg-white gap-2  hover:bg-gray-300  transition-colors duration-300">
+                        My Resume
+                        <img src="./assets/download-icon.png" alt="" class="w-4">
+                    </a>
+                </div>
+            </div>
             </div>
         </div>
     </div>
