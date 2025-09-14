@@ -6,7 +6,7 @@ This is my personal portfolio website built to showcase my journey as a B.Tech C
 This project showcases my skills, projects, and background as a developer passionate about building impactful web experiences.
 
 ## 🌐 Live Demo
-Check it out here: [musa-qureshi-portfolio.vercel.app](https://musa-qureshi-portfolio.vercel.app/)
+*Check it out here:* [musa-qureshi-portfolio.vercel.app](https://musa-qureshi-portfolio.vercel.app/)
 
 ## 📁 About This Project
 This is a fully responsive, modern portfolio built using:
