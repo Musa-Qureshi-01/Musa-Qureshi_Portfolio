@@ -9,7 +9,7 @@ This project showcases my skills, projects, and background as a developer passio
 *Check it out here:* [musa-qureshi-portfolio.vercel.app](https://musa-qureshi-portfolio.vercel.app/)
 
 ## 📁 About This Project
-This is a fully responsive, modern portfolio built using:
+This is a fully responsive, modern portfolio built using :
 
 - HTML5, CSS3, JavaScript
 - Tailwind CSS
