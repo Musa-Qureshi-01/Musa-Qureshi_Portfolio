@@ -3,7 +3,7 @@
 
 This is my personal portfolio website built to showcase my journey as a B.Tech CSE student. It includes my introduction, projects, and contact info. I'm passionate about web development and machine learning, and I’m constantly learning and improving through hands-on projects.
 
-This project showcases my skills, projects, and background as a developer passionate about building impactful web experiences.
+This project showcases my skills, projects, and background as a developer passionate about building impactful web experiences..
 
 ## 🌐 Live Demo
 *Check it out here:* [musa-qureshi-portfolio.vercel.app](https://musa-qureshi-portfolio.vercel.app/)
